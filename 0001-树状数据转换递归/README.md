@@ -1,6 +1,55 @@
 ### 考察技术点:
 - 主要考察对树桩数组的数据处理,以及递归知识点.
 ### 分析:
+```JavaScript
+// 树装数组
+const treeData = [
+  {
+    id: 1,
+    name: 'xx',
+    children:[
+      {
+        id: 11,
+        name: '1xx',
+        children: [
+          {
+            id: 111,
+            name: '11xx'
+          }
+        ]
+      },
+      {
+        id: 12,
+        name: '12x'
+      }
+    ]
+  }
+]
+
+// 转换的目标数组
+
+const toTreeData =  {
+  1: {
+    name: 'xx',
+    children: [11,22]
+  },
+  11: {
+    name: '1xx',
+    children: [111],
+    parent: 1
+  },
+  12: {
+    name: '1xx',
+    parent: 1
+  },
+  111: {
+    name: '11xx',
+    parentId: 11
+  }
+
+  // ...
+}
+```
 - 数组转为目标对象
 - 数组中每一个对象元素的id变成转换以后的对象key, 思路: 就要遍历一遍数组.
 - 目标对象中的children 保存的是直系子代.
