@@ -86,6 +86,7 @@ const findAllFather = (tree, id, parentIds = []) => {
   return null
 }
 
+
 // 6. 过滤出树形结构中符合条件的节点
 const filterTrueNode = tree => {
   return (tree || [])
@@ -98,4 +99,3 @@ const filterTrueNode = tree => {
         }
   	})
 }
-
