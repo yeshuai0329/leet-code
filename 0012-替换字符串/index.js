@@ -12,9 +12,7 @@
 function duplicateEncode1(word){
   return word.replace(/./g, m => {
     let reg = m
-    if (m === '(' ||m === ')') {
-       reg = '\\'+ m 
-    } 
+    if (m === '(' ||m === ')') reg = '\\'+ m 
     return word.match(new RegExp(reg, 'ig')).length === 1 ? '(' : ')'
   })
 }
@@ -31,7 +29,6 @@ function duplicateEncode2(word){
 console.log(`duplicateEncode2`, duplicateEncode2('Success'))
 
 // 解法三
-
 function duplicateEncode3(word) {
   return word
     .toLowerCase()
