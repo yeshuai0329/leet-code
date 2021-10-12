@@ -7,11 +7,10 @@
 // ```
 
 // 示例2: 
-// ```JavaScript
 // 输入：nums1 = [1,2], nums2 = [3,4]
 // 输出：2.50000
 // 解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
-// ```
+
 const nums1 = [1,3], nums2 = [2]
 
 const findMedianSortedArrays = function(nums1, nums2) {
@@ -25,6 +24,4 @@ const findMedianSortedArrays = function(nums1, nums2) {
       return (newArr[(newArr.length / 2) - 1] + newArr[(newArr.length / 2)]) / 2
   }
 };
-
 console.log("🚀 ~ findMedianSortedArrays", findMedianSortedArrays(nums1,nums2))
-
