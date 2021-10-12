@@ -23,7 +23,6 @@ const treeData = [
 ]
 
 // 转换的目标数组
-
 const toTreeData =  {
   1: {
     name: 'xx',
