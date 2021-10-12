@@ -31,5 +31,5 @@ const maxArea = function(height) {
     }    
   }
   return maxWater
-};
+}
 console.log("🚀  ~ maxArea", maxArea(height))
