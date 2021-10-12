@@ -12,6 +12,7 @@
 // 需求就是在数组中挑出基数和偶数
 // 所以利用filter 过滤数组分奇偶数组
 // 那个数组长度最短,就返回哪个值
+
 // 解法一
 const findOutlier1 = (integers) => {
   const evenArr = integers.filter(item => item % 2)
