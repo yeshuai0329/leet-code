@@ -20,7 +20,6 @@ const targetSum1 = (nums, target) => {
     }
   }
 }
-
 console.log("🚀 ~ targetSum1", targetSum1(nums, 9))
 
 // 方法二: 
