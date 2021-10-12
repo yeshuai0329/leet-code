@@ -15,12 +15,10 @@ const spinWords1 = (string) => {
   })
   return strArr.join(' ')
 }
-
 console.log(`spinWords1`, spinWords1("Hey fellow warriors"))
 
 // 解法二: 
 const spinWords2 = (string) => {
   return string.replace(/\w{5,}/ig, (match) => match.split('').reverse().join(''))
 }
-
 console.log(`spinWords2`, spinWords2("Hey fellow warriors"))
